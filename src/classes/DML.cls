@@ -35,7 +35,7 @@ public class DML
 		new DMLOperations.AllOrNone(records).addHandlers(handlers).safeInsert();
 		return this;
 	}
-	public DML PartialInsert()
+	public DML partialInsert()
 	{
 		new DMLOperations.Partial(records).addHandlers(handlers).safeInsert();
 		return this;
@@ -45,7 +45,7 @@ public class DML
 		new DMLOperations.AllOrNone(records).addHandlers(handlers).safeUpsert(sObjectType);
 		return this;
 	}
-	public DML PartialUpsert(SObjectType sObjectType)
+	public DML partialUpsert(SObjectType sObjectType)
 	{
 		new DMLOperations.Partial(records).addHandlers(handlers).safeUpsert(sObjectType);
 		return this;
@@ -55,7 +55,7 @@ public class DML
 		new DMLOperations.AllOrNone(records).addHandlers(handlers).safeUpdate();
 		return this;
 	}
-	public DML PartialUpdate()
+	public DML partialUpdate()
 	{
 		new DMLOperations.Partial(records).addHandlers(handlers).safeUpdate();
 		return this;
@@ -65,7 +65,7 @@ public class DML
 		new DMLOperations.AllOrNone(records).addHandlers(handlers).safeDelete();
 		return this;
 	}
-	public DML PartialDelete()
+	public DML partialDelete()
 	{
 		new DMLOperations.Partial(records).addHandlers(handlers).safeDelete();
 		return this;
@@ -75,7 +75,7 @@ public class DML
 		new DMLOperations.AllOrNone(records).addHandlers(handlers).safeUndelete();
 		return this;
 	}
-	public DML PartialUndelete()
+	public DML partialUndelete()
 	{
 		new DMLOperations.Partial(records).addHandlers(handlers).safeUndelete();
 		return this;
